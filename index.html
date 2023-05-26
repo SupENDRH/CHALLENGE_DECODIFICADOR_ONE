@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador Alura</title>
+        <script src="script.js"></script>
+        <link rel="icon" href="Imagenes/Logo.png" type="image/png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <section class="seccion1">
+                <img src="Imagenes/Logo.png" alt="">
+            </section>
+          
+            <section class="seccion2">
+                <div>
+                    <textarea name="texto_sin_decodificar" id="contenedor_textos" cols="50" rows="8" placeholder="Ingrese el texto aqui" required></textarea>
+                </div>
+                <div class="leyenda">
+                    <div>
+                        <img src="Imagenes/Vector.png" alt="Icono de advertencia">
+                    </div>
+                    <div>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="encriptar()" class="boton_encriptar">Encriptar</button> 
+                    <button onclick="desencriptar()" class="boton_desencriptar">Desencriptar</button>
+                </div>
+            </section>
+          
+            <section class="seccion3">
+                <div class="show">
+                    <img id="miImagen" src="Imagenes/Muñeco.png" alt="Muñeco">
+                    <p id="miTexto1" class="mensaje-principal">Ningún mensaje fue encontrado</p>
+                    <p id="miTexto2" class="mensaje-secundario">Ingresa el texto que desee encriptar o desencriptar</p>
+                    <div style="display: none;" id="resultados" class="texto_desencriptado">
+                        <textarea id="output" cols="20" rows="20"></textarea>
+                    </div>
+                    <div>
+                        <button onclick="copiarFuncion()" class="boton_copiar">Copiar</button> 
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+</html>
