@@ -30,6 +30,10 @@ function encriptar() {
     salidaUsuario.textContent = resultado;
 }
 function desencriptar() {
+    document.getElementById('miImagen').style.display = 'none';
+    document.getElementById('miTexto1').style.display = 'none';
+    document.getElementById('miTexto2').style.display = 'none';
+    document.getElementById("resultados").style.display = "block";
     var ingresoUsuario = document.getElementById("contenedor_textos");
     var salidaUsuario = document.getElementById("output");
     document.getElementById("resultados").style.display = "block";
